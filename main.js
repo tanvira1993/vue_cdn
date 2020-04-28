@@ -14,6 +14,7 @@ new Vue({
     components: {
         'navbar': Navbar
     },
+    mode : 'history',
     router,
     template: MainTemplate,
 

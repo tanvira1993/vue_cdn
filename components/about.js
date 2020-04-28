@@ -1,14 +1,20 @@
-// import { AboutTemplate } from "../templates/about-template.html";
-
+import  about  from "../templates/about-template.js";
 
 
 const About = {
-	template: `<h1 @click="guamara()"><button>About Func</button></h1>`,
+	template: about,
+	mounted(){
+		this.guamara();
+	},
 	methods:{
 		guamara(){
 			console.log("gua gua from about");
+		},
+		gua(){
+			console.log('hello gua function')
 		}
-	}
+	},
+	
 }
 
 
